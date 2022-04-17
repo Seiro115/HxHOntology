@@ -1,0 +1,176 @@
+{
+  "@context" : {
+    "characterIsAffiliated" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsAffiliated",
+      "@type" : "@id"
+    },
+    "NenNature" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature"
+    },
+    "areCompanions" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#areCompanions",
+      "@type" : "@id"
+    },
+    "Rol" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Rol"
+    },
+    "nenAbilityDescription" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Universe" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Bestiary" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bestiary"
+    },
+    "Landmark" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landmark"
+    },
+    "NenAbility" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+    },
+    "nenAbilityIsNenType" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType",
+      "@type" : "@id"
+    },
+    "Nen" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen"
+    },
+    "nenAbilityIsSameType" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsSameType",
+      "@type" : "@id"
+    },
+    "NenUser" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser"
+    },
+    "affiliationDescription" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#affiliationDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Sound" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location"
+    },
+    "characterIsNenType" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType",
+      "@type" : "@id"
+    },
+    "abilityHasNenType" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#abilityHasNenType",
+      "@type" : "@id"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Episode"
+    },
+    "Landform" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landform"
+    },
+    "charactersAreSameType" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#charactersAreSameType",
+      "@type" : "@id"
+    },
+    "TimeFrame" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Person"
+    },
+    "nenTypeDescription" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "StoryArc" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#StoryArc"
+    },
+    "characterHasNenType" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterHasNenType",
+      "@type" : "@id"
+    },
+    "VoiceLine" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "nenAbilityBelongsTo" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityBelongsTo",
+      "@type" : "@id"
+    },
+    "Nation" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nation"
+    },
+    "Subplot" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Subplot"
+    },
+    "Anime" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime"
+    },
+    "Plot" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Plot"
+    },
+    "Multitype" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Multitype"
+    },
+    "SoundEffect" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#SoundEffect"
+    },
+    "Frame" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Frame"
+    },
+    "hasNenAbility" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasNenAbility",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "OST" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#OST"
+    },
+    "hasAffiliation" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation",
+      "@type" : "@id"
+    },
+    "NenType" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+    },
+    "Seasson" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Seasson"
+    },
+    "Structure" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"
+    },
+    "HunterXHunter" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter"
+    },
+    "Personnel" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel"
+    },
+    "characterDescription" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Narrative" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative"
+    },
+    "Affiliation" : {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+    }
+  }
+}

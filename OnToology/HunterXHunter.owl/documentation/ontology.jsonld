@@ -1,0 +1,1405 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid110"
+    }, {
+      "@id" : "_:genid108"
+    }, {
+      "@id" : "_:genid106"
+    }, {
+      "@id" : "_:genid104"
+    }, {
+      "@id" : "_:genid102"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid112"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid102",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#charactersAreSameType"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid123"
+    }, {
+      "@id" : "_:genid121"
+    }, {
+      "@id" : "_:genid119"
+    }, {
+      "@id" : "_:genid117"
+    }, {
+      "@id" : "_:genid115"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid125"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsSameType"
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid128"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid133"
+    }, {
+      "@id" : "_:genid131"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "_:genid129"
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Multitype"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser"
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid136"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid139"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid136",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "_:genid137"
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid139",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid97"
+    }, {
+      "@id" : "_:genid95"
+    }, {
+      "@id" : "_:genid93"
+    }, {
+      "@id" : "_:genid91"
+    }, {
+      "@id" : "_:genid89"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid99"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"
+    }, {
+      "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#areCompanions"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name: HunterXHunter\nAuthor: Alejandro Sánchez Gómez"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all organizations that appear through the course of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all technical information related to the anime Hunter x Hunter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Anime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bestiary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all creatures that appear through the course of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bungee_Gum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all characters that appear through the course of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Chimera_Ants",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the episodes of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Seasson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Frame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all frames employed in the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+  } ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association"
+  } ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasNenAbility" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all classes related to the chosen serie, Hunter X Hunter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"
+  } ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association"
+  } ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasNenAbility" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all landforms that appear through the course of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all landmarks that appear through the course of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all locations that appear through the course of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Multitype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the narrative structure of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all nations that appear through the course of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass everything related to Nen, the main force used through the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all Nen abilities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all Nen types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#OST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all Original Sound Tracks (OST) used in the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/OST"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#SoundEffect"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all people who worked on the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Rol"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all things related to the production of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Phantom_Troupe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Plot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the plots of the narrative."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#StoryArc"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Rol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all roles that people work in the production of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Royal_Guard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Seasson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the seassons of the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the media employed by the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#SoundEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all sounds that are not orginal music nor voicelines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#StoryArc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the story arcs of the narrative."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Story_arc"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass how the anime is structured in terms of narrative and/or episode organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Subplot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the subplots of the narrative."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Plot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Thunderbolt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass the structure of the anime by time frames."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all classes related to the Hunter X Hunter universe."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class encompass all voicelines employed in the anime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Zoldyck_Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#abilityHasNenType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the abilities that have that nen type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#affiliationDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of the band."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterDescription"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#areCompanions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells whether two characters belong to the same affiliation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of the character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription"
+  }, {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterHasNenType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the characters that have that nen type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsAffiliated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the characters affiliated to a specific group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the Nen type/s of the character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#charactersAreSameType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells whether two characters have the same Nen type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the affiliation/s of the character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasNenAbility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the Nen abilities of the character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityBelongsTo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityBelongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the character/s that have that specific Nen ability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of the Nen ability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells the Nen type/s of the ability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsSameType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tells if two abilities are the same type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of the Nen type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "urn:swrl:var#x",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#y",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#z",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]
