@@ -1,0 +1,1311 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jandr/ontologies/2022/3/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/jandr/ontologies/2022/3/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:HunterXHunter="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter">
+        <rdfs:comment>Name: HunterXHunter
+Author: Alejandro Sánchez Gómez</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#abilityHasNenType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#abilityHasNenType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <rdfs:comment>Tells the abilities that have that nen type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#areCompanions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#areCompanions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:comment>Tells whether two characters belong to the same affiliation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterHasNenType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterHasNenType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:comment>Tells the characters that have that nen type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsAffiliated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsAffiliated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:comment>Tells the characters affiliated to a specific group.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+        <rdfs:comment>Tells the Nen type/s of the character.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#charactersAreSameType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#charactersAreSameType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:comment>Tells whether two characters have the same Nen type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+        <rdfs:comment>Tells the affiliation/s of the character.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasNenAbility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasNenAbility">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityBelongsTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <rdfs:comment>Tells the Nen abilities of the character.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityBelongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityBelongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:comment>Tells the character/s that have that specific Nen ability.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+        <rdfs:comment>Tells the Nen type/s of the ability.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsSameType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsSameType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <rdfs:comment>Tells if two abilities are the same type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#affiliationDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#affiliationDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterDescription"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription"/>
+        <rdfs:comment>A description of the band.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription"/>
+        <rdfs:comment>A description of the character.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription"/>
+        <rdfs:comment>A description of the Nen ability.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A description of the Nen type.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"/>
+        <rdfs:comment>This class encompass all organizations that appear through the course of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"/>
+        <rdfs:comment>This class encompass all technical information related to the anime Hunter x Hunter.</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Anime</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bestiary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bestiary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"/>
+        <rdfs:comment>This class encompass all creatures that appear through the course of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"/>
+        <rdfs:comment>This class encompass all characters that appear through the course of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Episode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Episode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Seasson"/>
+        <rdfs:comment>This class encompass the episodes of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Frame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Frame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Episode"/>
+        <rdfs:comment>This class encompass all frames employed in the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>This class encompass all classes related to the chosen serie, Hunter X Hunter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location"/>
+        <rdfs:comment>This class encompass all landforms that appear through the course of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landmark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landmark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location"/>
+        <rdfs:comment>This class encompass all landmarks that appear through the course of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"/>
+        <rdfs:comment>This class encompass all locations that appear through the course of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Multitype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Multitype">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame"/>
+        <rdfs:comment>This class encompass the narrative structure of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location"/>
+        <rdfs:comment>This class encompass all nations that appear through the course of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe"/>
+        <rdfs:comment>This class encompass everything related to Nen, the main force used through the serie.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature"/>
+        <rdfs:comment>This class encompass all Nen abilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature"/>
+        <rdfs:comment>This class encompass all Nen types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#OST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#OST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#SoundEffect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine"/>
+        <rdfs:comment>This class encompass all Original Sound Tracks (OST) used in the anime.</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/OST</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Rol"/>
+        <rdfs:comment>This class encompass all people who worked on the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"/>
+        <rdfs:comment>This class encompass all things related to the production of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Plot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Plot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#StoryArc"/>
+        <rdfs:comment>This class encompass the plots of the narrative.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Rol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Rol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel"/>
+        <rdfs:comment>This class encompass all roles that people work in the production of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Seasson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Seasson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame"/>
+        <rdfs:comment>This class encompass the seassons of the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"/>
+        <rdfs:comment>This class encompass the media employed by the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#SoundEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#SoundEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine"/>
+        <rdfs:comment>This class encompass all sounds that are not orginal music nor voicelines.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#StoryArc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#StoryArc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative"/>
+        <rdfs:comment>This class encompass the story arcs of the narrative.</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Story_arc</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime"/>
+        <rdfs:comment>This class encompass how the anime is structured in terms of narrative and/or episode organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Subplot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Subplot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Plot"/>
+        <rdfs:comment>This class encompass the subplots of the narrative.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure"/>
+        <rdfs:comment>This class encompass the structure of the anime by time frames.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter"/>
+        <rdfs:comment>This class encompass all classes related to the Hunter X Hunter universe.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound"/>
+        <rdfs:comment>This class encompass all voicelines employed in the anime.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bungee_Gum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bungee_Gum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Chimera_Ants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Chimera_Ants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+        <HunterXHunter:hasAffiliation rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association"/>
+        <HunterXHunter:hasNenAbility rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <HunterXHunter:nenAbilityIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <HunterXHunter:nenAbilityIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"/>
+        <HunterXHunter:nenAbilityIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"/>
+        <HunterXHunter:nenAbilityIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"/>
+        <HunterXHunter:hasAffiliation rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association"/>
+        <HunterXHunter:hasNenAbility rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+        <HunterXHunter:characterIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Phantom_Troupe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Phantom_Troupe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Royal_Guard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Royal_Guard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+        <HunterXHunter:nenAbilityIsNenType rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Thunderbolt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Thunderbolt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Zoldyck_Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Zoldyck_Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#charactersAreSameType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsSameType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                            </owl:Restriction>
+                        </swrl:classPredicate>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+                            </owl:Restriction>
+                        </swrl:classPredicate>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Multitype"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#areCompanions"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
