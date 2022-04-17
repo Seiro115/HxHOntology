@@ -1,0 +1,898 @@
+@prefix : <http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#> .
+
+<http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter> rdf:type owl:Ontology ;
+                                                                    rdfs:comment """Name: HunterXHunter
+Author: Alejandro Sánchez Gómez""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#abilityHasNenType
+:abilityHasNenType rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   owl:inverseOf :nenAbilityIsNenType ;
+                   rdf:type owl:AsymmetricProperty ;
+                   rdfs:domain :NenType ;
+                   rdfs:range :NenAbility ;
+                   rdfs:comment "Tells the abilities that have that nen type." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#areCompanions
+:areCompanions rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:SymmetricProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Character ;
+               rdfs:comment "Tells whether two characters belong to the same affiliation." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterHasNenType
+:characterHasNenType rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     owl:inverseOf :characterIsNenType ;
+                     rdf:type owl:AsymmetricProperty ;
+                     rdfs:domain :NenType ;
+                     rdfs:range :Character ;
+                     rdfs:comment "Tells the characters that have that nen type." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsAffiliated
+:characterIsAffiliated rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       owl:inverseOf :hasAffiliation ;
+                       rdf:type owl:AsymmetricProperty ;
+                       rdfs:domain :Affiliation ;
+                       rdfs:range :Character ;
+                       rdfs:comment "Tells the characters affiliated to a specific group." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterIsNenType
+:characterIsNenType rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:AsymmetricProperty ;
+                    rdfs:domain :Character ;
+                    rdfs:range :NenType ;
+                    rdfs:comment "Tells the Nen type/s of the character." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#charactersAreSameType
+:charactersAreSameType rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdf:type owl:SymmetricProperty ;
+                       rdfs:domain :Character ;
+                       rdfs:range :Character ;
+                       rdfs:comment "Tells whether two characters have the same Nen type." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasAffiliation
+:hasAffiliation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdf:type owl:AsymmetricProperty ;
+                rdfs:domain :Character ;
+                rdfs:range :Affiliation ;
+                rdfs:comment "Tells the affiliation/s of the character." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#hasNenAbility
+:hasNenAbility rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :nenAbilityBelongsTo ;
+               rdf:type owl:AsymmetricProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :NenAbility ;
+               rdfs:comment "Tells the Nen abilities of the character." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityBelongsTo
+:nenAbilityBelongsTo rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdf:type owl:AsymmetricProperty ;
+                     rdfs:domain :NenAbility ;
+                     rdfs:range :Character ;
+                     rdfs:comment "Tells the character/s that have that specific Nen ability." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsNenType
+:nenAbilityIsNenType rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdf:type owl:AsymmetricProperty ;
+                     rdfs:domain :NenAbility ;
+                     rdfs:range :NenType ;
+                     rdfs:comment "Tells the Nen type/s of the ability." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityIsSameType
+:nenAbilityIsSameType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdf:type owl:SymmetricProperty ;
+                      rdfs:domain :NenAbility ;
+                      rdfs:range :NenAbility ;
+                      rdfs:comment "Tells if two abilities are the same type." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#affiliationDescription
+:affiliationDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdf:type owl:FunctionalProperty ;
+                        rdfs:domain :Affiliation ;
+                        rdfs:range xsd:string ;
+                        owl:propertyDisjointWith :characterDescription ,
+                                                 :nenAbilityDescription ,
+                                                 :nenTypeDescription ;
+                        rdfs:comment "A description of the band." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#characterDescription
+:characterDescription rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :Character ;
+                      rdfs:range xsd:string ;
+                      owl:propertyDisjointWith :nenAbilityDescription ,
+                                               :nenTypeDescription ;
+                      rdfs:comment "A description of the character." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenAbilityDescription
+:nenAbilityDescription rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdf:type owl:FunctionalProperty ;
+                       rdfs:domain :NenAbility ;
+                       rdfs:range xsd:string ;
+                       owl:propertyDisjointWith :nenTypeDescription ;
+                       rdfs:comment "A description of the Nen ability." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#nenTypeDescription
+:nenTypeDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :NenType ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "A description of the Nen type." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Affiliation
+:Affiliation rdf:type owl:Class ;
+             rdfs:subClassOf :Universe ;
+             rdfs:comment "This class encompass all organizations that appear through the course of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Anime
+:Anime rdf:type owl:Class ;
+       rdfs:subClassOf :HunterXHunter ;
+       owl:disjointWith :Universe ;
+       rdfs:comment "This class encompass all technical information related to the anime Hunter x Hunter." ;
+       rdfs:sameAs "https://dbpedia.org/page/Anime" .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bestiary
+:Bestiary rdf:type owl:Class ;
+          rdfs:subClassOf :Universe ;
+          rdfs:comment "This class encompass all creatures that appear through the course of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :Universe ;
+           rdfs:comment "This class encompass all characters that appear through the course of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:subClassOf :Seasson ;
+         rdfs:comment "This class encompass the episodes of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Frame
+:Frame rdf:type owl:Class ;
+       rdfs:subClassOf :Episode ;
+       rdfs:comment "This class encompass all frames employed in the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#HunterXHunter
+:HunterXHunter rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:comment "This class encompass all classes related to the chosen serie, Hunter X Hunter." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landform
+:Landform rdf:type owl:Class ;
+          rdfs:subClassOf :Location ;
+          rdfs:comment "This class encompass all landforms that appear through the course of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Landmark
+:Landmark rdf:type owl:Class ;
+          rdfs:subClassOf :Location ;
+          rdfs:comment "This class encompass all landmarks that appear through the course of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :Universe ;
+          rdfs:comment "This class encompass all locations that appear through the course of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Multitype
+:Multitype rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :NenUser
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :characterIsNenType ;
+                                                        owl:minCardinality "2"^^xsd:nonNegativeInteger
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Narrative
+:Narrative rdf:type owl:Class ;
+           rdfs:subClassOf :Structure ;
+           owl:disjointWith :TimeFrame ;
+           rdfs:comment "This class encompass the narrative structure of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nation
+:Nation rdf:type owl:Class ;
+        rdfs:subClassOf :Location ;
+        rdfs:comment "This class encompass all nations that appear through the course of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Nen
+:Nen rdf:type owl:Class ;
+     rdfs:subClassOf :Universe ;
+     rdfs:comment "This class encompass everything related to Nen, the main force used through the serie." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenAbility
+:NenAbility rdf:type owl:Class ;
+            rdfs:subClassOf :NenNature ;
+            rdfs:comment "This class encompass all Nen abilities." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenNature
+:NenNature rdf:type owl:Class ;
+           rdfs:subClassOf :Nen .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenType
+:NenType rdf:type owl:Class ;
+         rdfs:subClassOf :NenNature ;
+         rdfs:comment "This class encompass all Nen types." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#NenUser
+:NenUser rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :characterIsNenType ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+         rdfs:subClassOf :Nen .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#OST
+:OST rdf:type owl:Class ;
+     rdfs:subClassOf :Sound ;
+     owl:disjointWith :SoundEffect ,
+                      :VoiceLine ;
+     rdfs:comment "This class encompass all Original Sound Tracks (OST) used in the anime." ;
+     rdfs:sameAs "https://dbpedia.org/page/OST" .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Personnel ;
+        owl:disjointWith :Rol ;
+        rdfs:comment "This class encompass all people who worked on the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Personnel
+:Personnel rdf:type owl:Class ;
+           rdfs:subClassOf :Anime ;
+           owl:disjointWith :Sound ,
+                            :Structure ;
+           rdfs:comment "This class encompass all things related to the production of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Plot
+:Plot rdf:type owl:Class ;
+      rdfs:subClassOf :Narrative ;
+      owl:disjointWith :StoryArc ;
+      rdfs:comment "This class encompass the plots of the narrative." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Rol
+:Rol rdf:type owl:Class ;
+     rdfs:subClassOf :Personnel ;
+     rdfs:comment "This class encompass all roles that people work in the production of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Seasson
+:Seasson rdf:type owl:Class ;
+         rdfs:subClassOf :TimeFrame ;
+         rdfs:comment "This class encompass the seassons of the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Sound
+:Sound rdf:type owl:Class ;
+       rdfs:subClassOf :Anime ;
+       owl:disjointWith :Structure ;
+       rdfs:comment "This class encompass the media employed by the anime." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#SoundEffect
+:SoundEffect rdf:type owl:Class ;
+             rdfs:subClassOf :Sound ;
+             owl:disjointWith :VoiceLine ;
+             rdfs:comment "This class encompass all sounds that are not orginal music nor voicelines." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#StoryArc
+:StoryArc rdf:type owl:Class ;
+          rdfs:subClassOf :Narrative ;
+          rdfs:comment "This class encompass the story arcs of the narrative." ;
+          rdfs:sameAs "https://dbpedia.org/page/Story_arc" .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Structure
+:Structure rdf:type owl:Class ;
+           rdfs:subClassOf :Anime ;
+           rdfs:comment "This class encompass how the anime is structured in terms of narrative and/or episode organization." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Subplot
+:Subplot rdf:type owl:Class ;
+         rdfs:subClassOf :Plot ;
+         rdfs:comment "This class encompass the subplots of the narrative." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#TimeFrame
+:TimeFrame rdf:type owl:Class ;
+           rdfs:subClassOf :Structure ;
+           rdfs:comment "This class encompass the structure of the anime by time frames." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Universe
+:Universe rdf:type owl:Class ;
+          rdfs:subClassOf :HunterXHunter ;
+          rdfs:comment "This class encompass all classes related to the Hunter X Hunter universe." .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#VoiceLine
+:VoiceLine rdf:type owl:Class ;
+           rdfs:subClassOf :Sound ;
+           rdfs:comment "This class encompass all voicelines employed in the anime." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Bungee_Gum
+:Bungee_Gum rdf:type owl:NamedIndividual ,
+                     :NenAbility .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Chimera_Ants
+:Chimera_Ants rdf:type owl:NamedIndividual ,
+                       :Affiliation .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Conjuration
+:Conjuration rdf:type owl:NamedIndividual ,
+                      :NenType .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Emission
+:Emission rdf:type owl:NamedIndividual ,
+                   :NenType .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Enhancement
+:Enhancement rdf:type owl:NamedIndividual ,
+                      :NenType .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Gon_Freecss
+:Gon_Freecss rdf:type owl:NamedIndividual ,
+                      :Character ;
+             :characterIsNenType :Enhancement ;
+             :hasAffiliation :Hunter_Association ;
+             :hasNenAbility :Jajanken .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hisoka_Morow
+:Hisoka_Morow rdf:type owl:NamedIndividual ,
+                       :Character .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Hunter_Association
+:Hunter_Association rdf:type owl:NamedIndividual ,
+                             :Affiliation .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Jajanken
+:Jajanken rdf:type owl:NamedIndividual ,
+                   :NenAbility ;
+          :nenAbilityIsNenType :Enhancement .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Judgment_Chain
+:Judgment_Chain rdf:type owl:NamedIndividual ,
+                         :NenAbility ;
+                :nenAbilityIsNenType :Conjuration ,
+                                     :Emission ,
+                                     :Manipulation .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Killua_Zoldyck
+:Killua_Zoldyck rdf:type owl:NamedIndividual ,
+                         :Character .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Kurapika
+:Kurapika rdf:type owl:NamedIndividual ,
+                   :Character ;
+          :characterIsNenType :Conjuration ,
+                              :Emission ,
+                              :Enhancement ,
+                              :Manipulation ,
+                              :Specialization ,
+                              :Transmutation ;
+          :hasAffiliation :Hunter_Association ;
+          :hasNenAbility :Judgment_Chain .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Manipulation
+:Manipulation rdf:type owl:NamedIndividual ,
+                       :NenType .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Neferpitou
+:Neferpitou rdf:type owl:NamedIndividual ,
+                     :Character ;
+            :characterIsNenType :Specialization .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Phantom_Troupe
+:Phantom_Troupe rdf:type owl:NamedIndividual ,
+                         :Affiliation .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Royal_Guard
+:Royal_Guard rdf:type owl:NamedIndividual ,
+                      :Affiliation .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Specialization
+:Specialization rdf:type owl:NamedIndividual ,
+                         :NenType .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Terpsichora
+:Terpsichora rdf:type owl:NamedIndividual ,
+                      :NenAbility ;
+             :nenAbilityIsNenType :Specialization .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Thunderbolt
+:Thunderbolt rdf:type owl:NamedIndividual ,
+                      :NenAbility .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Transmutation
+:Transmutation rdf:type owl:NamedIndividual ,
+                        :NenType .
+
+
+###  http://www.semanticweb.org/jandr/ontologies/2022/3/HunterXHunter#Zoldyck_Family
+:Zoldyck_Family rdf:type owl:NamedIndividual ,
+                         :Affiliation .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Conjuration
+                        :Emission
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Conjuration
+                        :Enhancement
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Conjuration
+                        :Manipulation
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Conjuration
+                        :Specialization
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Conjuration
+                        :Transmutation
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Emission
+                        :Enhancement
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Emission
+                        :Manipulation
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Emission
+                        :Specialization
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Emission
+                        :Transmutation
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Enhancement
+                        :Manipulation
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Enhancement
+                        :Specialization
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Enhancement
+                        :Transmutation
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Gon_Freecss
+                        :Hisoka_Morow
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Gon_Freecss
+                        :Killua_Zoldyck
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Gon_Freecss
+                        :Kurapika
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Gon_Freecss
+                        :Neferpitou
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Hisoka_Morow
+                        :Killua_Zoldyck
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Hisoka_Morow
+                        :Kurapika
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Hisoka_Morow
+                        :Neferpitou
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Jajanken
+                        :Terpsichora
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Judgment_Chain
+                        :Terpsichora
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Killua_Zoldyck
+                        :Kurapika
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Killua_Zoldyck
+                        :Neferpitou
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Kurapika
+                        :Neferpitou
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Manipulation
+                        :Specialization
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Manipulation
+                        :Transmutation
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Specialization
+                        :Transmutation
+                      )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :NenType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :characterIsNenType ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :characterIsNenType ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :charactersAreSameType ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :NenAbility ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :NenType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :NenAbility ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :nenAbilityIsNenType ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :nenAbilityIsNenType ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :nenAbilityIsSameType ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty :characterIsNenType ;
+                                                                                                         owl:minCardinality "2"^^xsd:nonNegativeInteger
+                                                                                                       ] ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :NenUser ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Multitype ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty :characterIsNenType ;
+                                                                                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                                                       ] ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :NenUser ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Affiliation ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAffiliation ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAffiliation ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#z> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :areCompanions ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
